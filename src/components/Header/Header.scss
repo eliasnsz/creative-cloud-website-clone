@@ -1,3 +1,5 @@
+@import "../../App.scss";
+
 #main-header {
   height: 60px;
   width: 100%;
@@ -37,4 +39,10 @@
   gap: 20px;
   font-size: .9em;
   font-weight: 600;
+
+  span:hover, svg:hover {
+    color: $hovered-btn-color;
+    cursor: pointer;
+    fill: $hovered-btn-color;
+  }
 }

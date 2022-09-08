@@ -1,3 +1,5 @@
+@import "../../App.scss";
+
 #main-section-container {
   height: 570px;
   width: 100%;
@@ -58,14 +60,14 @@
         }
         
         button:nth-child(2) {
-          background-color: rgb(107, 107, 230);
+          background-color: $btn-color;
           color: white;
-          border-color: rgb(107, 107, 230);
+          border-color: #6b6be6;
 
           &:hover {
             color: white;
             background-color: black;
-            background-color: rgb(87, 87, 207);
+            background-color: #5757cf;
             border-color: rgb(87, 87, 207);  
           }
         }
