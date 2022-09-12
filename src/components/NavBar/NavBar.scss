@@ -40,21 +40,21 @@
 
       input[type="radio"] {
         all: unset;
+        display: flex;
         position: absolute;
-        width: 100%;
         height: 100%;
-        transition: all .2s;
-        transform: translateX(0px);
-
+        width: 100%;
+        
         &:checked::after {
           content: "";
           display: block;
-          position: absolute;
+          position: inherit;
           bottom: 0;
           background-color: black;
           width: 100%;
           height: 2px;
         }
+        
       }
 
 
