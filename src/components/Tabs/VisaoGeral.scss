@@ -3,7 +3,7 @@ section#tab-container {
   margin: auto;
   height: 100%;
   padding: 52px 0px 100px 0px;
-
+  
 }
 .text-container {
   text-align: center;
@@ -19,4 +19,14 @@ section#tab-container {
     font-size: 1.1em;
     line-height: 1.5em;
   }
+}
+
+section#grid-card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 50px;
+  gap: 25px;
+  grid-template-columns: 1fr 1fr 1fr;
 }

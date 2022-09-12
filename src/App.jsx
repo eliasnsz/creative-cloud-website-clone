@@ -1,5 +1,6 @@
 import { useState, createContext } from 'react'
 import './App.scss'
+
 import { Header } from './components/Header/Header'
 import { MainSection } from './components/MainSection/MainSection'
 import { NavBar } from './components/NavBar/NavBar'
@@ -19,7 +20,6 @@ export default function App() {
         <MainSection />
         <NavBar />
         {tabSelected == "visao-geral" ? <VisaoGeral/> : null}
-        {tabSelected == "foto" ? <h1>foto</h1> : null}
         {tabSelected == "design-grafico" ? <h1>design</h1> : null}
         {tabSelected == "video" ? <h1>video</h1> : null}
         {tabSelected == "ilustracao" ? <h1>ilustracao</h1> : null}

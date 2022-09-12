@@ -1,0 +1,75 @@
+section#card-container {
+  width: 341px;
+  height: 389px;
+  border-radius: 7px;
+  font-size: 0.9em;
+  border: 1px solid rgba(0, 0, 0, 0.284);
+
+  .img {
+    min-height: 128px;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .card-content {
+    padding: 16px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+  }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .card-logo-img {
+      width: 40px;
+    }
+    .device-logo-img {
+      width: 24px;
+      gap: 0px;
+    }
+    h2 {
+      width: 100%;
+      font-size: 1.25em;
+    }
+  }
+  .card-body {
+    font-weight: 600;
+    height: 105px;
+    
+    a {
+      color: rgb(101, 101, 241);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .card-footer {
+    display: flex;
+    justify-self: flex-end;
+    flex-direction: column;
+    gap: 15px;
+
+    button {
+      all: unset;
+      width: fit-content;
+      align-self: flex-end;
+      border: 2px solid black;
+      border-radius: 20px;
+      font-weight: 700;
+      transition: .15s ease;
+      padding: 5px 12px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+
+}
