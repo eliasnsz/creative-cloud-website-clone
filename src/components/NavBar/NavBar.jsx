@@ -1,10 +1,10 @@
-import { useState } from 'react'
+import { useState, useContext } from 'react'
+import { TabContext } from '../../App'
 import './NavBar.scss'
 
 export function NavBar () {
 
-  const [ tabSelected, setTabSelected ] = useState("")
-
+  const { tabSelected, setTabSelected } = useContext(TabContext)
 
   return (
     <>

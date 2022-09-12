@@ -1,0 +1,22 @@
+section#tab-container {
+  max-width: 1200px;
+  margin: auto;
+  height: 100%;
+  padding: 52px 0px 100px 0px;
+
+}
+.text-container {
+  text-align: center;
+
+  h1 {
+    font-size: 2.2em;
+  }
+
+  p {
+    margin: 10px auto;
+    width: 900px;
+    font-weight: 600;
+    font-size: 1.1em;
+    line-height: 1.5em;
+  }
+}
