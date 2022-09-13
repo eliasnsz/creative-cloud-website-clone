@@ -7,4 +7,4 @@
  <li>Sass
  <li>ReactJS
 </ul> 
-<p>A estilização da página foi toda feita CSS puro, não houve utilização de assistências, ao não ser o Sass, para melhor organização.
+<p>A estilização da página foi toda feita com CSS puro, não houve utilização de assistências, ao não ser o Sass, para melhor organização.
