@@ -1,6 +1,6 @@
 # Clone do site da Creative Cloud
 
-<p>A Creative Cloud é uma comunidade criativa regida pela Adobe. Este projeto é um clone desse site.</p>
+<p>A <a href="https://www.adobe.com/br/creativecloud/campaign/pricing.html" target="_blank">Creative Cloud</a> é uma comunidade criativa regida pela Adobe. Este projeto é um clone desse site.</p>
 <h3>Tecnlogias Utilizadas</h3>
 <ul>
  <li>Vite
