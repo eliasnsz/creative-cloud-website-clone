@@ -1,6 +1,6 @@
 import './Card.scss'
 
-export function Card({ background, icon, title, devicesLogos, desc, callToAction}) {
+export function Card({ background, icon, title, devicesLogos, desc, callToAction }) {
   return (
     <>
       <section id='card-container'>

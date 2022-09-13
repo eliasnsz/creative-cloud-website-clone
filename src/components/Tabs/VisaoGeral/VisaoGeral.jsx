@@ -28,7 +28,7 @@ export function VisaoGeral () {
               "https://www.adobe.com/content/dam/cc/icons/S_TabletMobile_22_N.svg"
             ]}
             desc={"Crie imagens incríveis, desenhos avançados e arte espetacular."}
-            callToAction={"Experimente Gratis"}
+            callToAction={"Experimente grátis"}
           />
           <Card 
             background={"https://cc-prod.scene7.com/is/image/CCProdAuthor/2021-Product%20Card_AI_600x208?$pjpeg$&jpegSize=100&wid=600"}
@@ -39,7 +39,7 @@ export function VisaoGeral () {
               "https://www.adobe.com/content/dam/cc/icons/S_DeviceTablet_22_N.svg"
             ]}
             desc={"Crie belos desenhos, ícones e muito mais, para usar em qualquer lugar e em qualquer tamanho."}
-            callToAction={"Experimente Gratis"}
+            callToAction={"Experimente grátis"}
           />
           <Card 
             background={"https://cc-prod.scene7.com/is/image/CCProdAuthor/2021-Product%20Card_ID_600x208?$pjpeg$&jpegSize=100&wid=600"}
@@ -49,7 +49,7 @@ export function VisaoGeral () {
               "https://www.adobe.com/content/dam/cc/icons/S_DeviceDesktop_22_N.svg"
             ]}
             desc={"Crie e publique livros, revistas digitais, ebooks, pôsteres e PDFs interativos."}
-            callToAction={"Experimente Gratis"}
+            callToAction={"Experimente grátis"}
           />
           <Card 
             background={"https://cc-prod.scene7.com/is/image/CCProdAuthor/2021-Product%20Card_PR_Pro_600x208?$pjpeg$&jpegSize=100&wid=600"}
@@ -59,7 +59,7 @@ export function VisaoGeral () {
               "https://www.adobe.com/content/dam/cc/icons/S_DeviceDesktop_22_N.svg"
             ]}
             desc={"O padrão do setor em edição profissional de filmes e vídeos."}
-            callToAction={"Experimente Gratis"}
+            callToAction={"Experimente grátis"}
           />
           <Card 
             background={"https://cc-prod.scene7.com/is/image/CCProdAuthor/2021-Product%20Card_XD_600x208?$pjpeg$&jpegSize=100&wid=600"}
@@ -70,7 +70,7 @@ export function VisaoGeral () {
               "https://www.adobe.com/content/dam/cc/icons/S_DevicePhone_22_N.svg"
             ]}
             desc={"Crie experiências incríveis para sites, aplicativos, jogos e marcas. "}
-            callToAction={"Experimente Gratis"}
+            callToAction={"Experimente grátis"}
           />
           <Card 
             background={"https://cc-prod.scene7.com/is/image/CCProdAuthor/2021-Product%20Card_Acrobat%20DC_600x208?$pjpeg$&jpegSize=100&wid=600"}
@@ -81,7 +81,7 @@ export function VisaoGeral () {
               "https://www.adobe.com/content/dam/cc/icons/S_TabletMobile_22_N.svg"
             ]}
             desc={"Tenha ferramentas de PDF e assinatura eletrônica para todas as suas necessidades de documentos digitais."}
-            callToAction={"Experimente Gratis"}
+            callToAction={"Experimente grátis"}
           />
 
         </section>
