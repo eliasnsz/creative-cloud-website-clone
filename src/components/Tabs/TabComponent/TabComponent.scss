@@ -1,18 +1,25 @@
 #tab-container {
+  
   h2.tab-title {
+    width: 90%;
     font-weight: 500;
     font-size: 1.7em;
     text-align: center;
-    margin-bottom: 10px;
+    margin: 10px auto;
   }
   p.tab-desc {
+    width: 80%;
+    margin: auto;
     text-align: center;
 
+    p.extra-desc {
+      font-size: 1.1em;
+      font-weight: 600;
+    }
     a {
       text-decoration: none;
       color: rgb(101, 101, 241);
       font-weight: 600;
-      font-size: 1.1em;
 
       &:hover {
         text-decoration: underline;

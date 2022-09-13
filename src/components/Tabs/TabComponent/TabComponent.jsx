@@ -1,7 +1,7 @@
 import { Card } from '../../Card/Card'
 import './TabComponent.scss'
 
-export function TabComponent({ title, desc, cards }) {
+export function TabComponent({ title, extra, desc, cards }) {
   return (
     <>
       <section id="tab-container">
@@ -9,7 +9,7 @@ export function TabComponent({ title, desc, cards }) {
           {title}
         </h2>
         <p className='tab-desc'>
-          <a href="">{desc}</a>
+          <p className='extra-desc'>{extra} <a href="">{desc}</a></p>
         </p>
 
         <section id="grid-card-container">
