@@ -18,12 +18,23 @@ section#tab-container {
     font-weight: 600;
     font-size: 1.1em;
     line-height: 1.5em;
+
+  }
+  
+  @media (max-width: 1200px) {
+    h1 {
+      font-size: 2em;
+    }
+    p {
+      width: 80%;
+
+    }
   }
 }
 
 section#grid-card-container {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   flex-wrap: wrap;
   width: 100%;
   padding: 50px;

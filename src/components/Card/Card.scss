@@ -20,16 +20,27 @@ section#card-container {
 
   .card-header {
     display: flex;
-    align-items: center;
-    gap: 15px;
+
+    .right-header {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      gap: 12px;
+    }
+    .devices-logo {
+      display: flex;
+      align-items: flex-start;
+      
+      img {
+        width: 24px;
+        margin-right: 2px;   
+      }
+    }
 
     .card-logo-img {
       width: 40px;
     }
-    .device-logo-img {
-      width: 24px;
-      gap: 0px;
-    }
+
     h2 {
       width: 100%;
       font-size: 1.25em;

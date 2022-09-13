@@ -1,6 +1,6 @@
 import './Card.scss'
 
-export function Card({ background, icon, title, desc, callToAction}) {
+export function Card({ background, icon, title, devicesLogos, desc, callToAction}) {
   return (
     <>
       <section id='card-container'>
@@ -11,8 +11,17 @@ export function Card({ background, icon, title, desc, callToAction}) {
         </div>
         <div className="card-content">
           <div className="card-header">
-            <img className='card-logo-img' src={icon} alt="photoshop-logo" />
-            <h2>{title}</h2>
+            <div className="right-header">
+              <img className='card-logo-img' src={icon} alt="photoshop-logo" />
+              <h2>{title}</h2>
+            </div>
+            <div className="devices-logo">
+              {
+                devicesLogos.map((logoUrl, i) => {
+                  return <img key={i} src={logoUrl} alt="" />
+                })
+              }
+            </div>
             
           </div>
           <div className="card-body">
