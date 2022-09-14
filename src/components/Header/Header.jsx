@@ -20,13 +20,15 @@ export function Header() {
     
 
     if(typeof(scrollY) == "number") {
-      if (scrollY == lastPosition) return
+      if (scrollY == lastPosition || scrollY <= 60) return
 
       if(scrollY > lastPosition) {  
         setLastPosition(scrollY)
         setIsHeaderVisible(false)
+        console.log(scrollY)
         return
       } else {
+        console.log(scrollY)
         setIsHeaderVisible(true)
         setLastPosition(scrollY)
         return
