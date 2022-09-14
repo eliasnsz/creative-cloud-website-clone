@@ -4,6 +4,7 @@ import './App.scss'
 import { Header } from './components/Header/Header'
 import { MainSection } from './components/MainSection/MainSection'
 import { NavBar } from './components/NavBar/NavBar'
+import { Plans } from './components/Plans/Plans'
 import { SecondarySection } from './components/SecondarySection/SecondarySection'
 import { TabComponent } from './components/Tabs/TabComponent/TabComponent'
 import { VisaoGeral } from './components/Tabs/VisaoGeral/VisaoGeral'
@@ -606,6 +607,8 @@ export default function App() {
       </TabContext.Provider>
       <SecondarySection/>
       <TerciarySection/>
+      <div id="hr-gradient"></div>
+      <Plans/>
     </div>
   )
 }
