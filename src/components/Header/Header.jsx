@@ -6,19 +6,7 @@ export function Header() {
   const [isHeaderVisible, setIsHeaderVisible] = useState(true)
   const [lastPosition, setLastPosition] = useState(0);
 
-  window.addEventListener('wheel', (e) => {
-    
-    if(e.deltaY === 100) {
-      setIsHeaderVisible(false)
-    } else {
-      setIsHeaderVisible(true)
-    }
-
-  })
-
-  window.addEventListener('touchmove', (e) => {
-    
-
+  const handleHeaderAnimation = (e) => {
     if(typeof(scrollY) == "number") {
       if (scrollY == lastPosition || scrollY <= 60) return
 
@@ -34,9 +22,10 @@ export function Header() {
         return
       }
     }
-   
-    
-  })
+  }
+
+  window.addEventListener('scroll', handleHeaderAnimation)
+  window.addEventListener('touchmove', handleHeaderAnimation)
 
   return (
     <>
