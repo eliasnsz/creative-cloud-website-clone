@@ -1,0 +1,81 @@
+#mobile-main-section-container {
+  display: none;
+  height: 100%;
+  margin-top: 60px;
+
+  .background-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-image: url("https://cc-prod.scene7.com/is/image/CCProdAuthor/CC-overview-marquee-mobile?$pjpeg$&jpegSize=100&wid=599");
+    background-size: cover;
+    background-position: center center;
+
+  }
+
+  #mobile-text-container {
+    padding: 35px;
+    background-color: #2C2C2C;
+    height: 50%;
+    color: #fff;
+    font-size: 1.2em;
+
+    h1 {
+      margin-bottom: 20px;
+    }
+    p {
+      font-weight: 500;
+      line-height: 30px;
+    }
+    a {
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .mobile-button {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      gap: 20px;
+
+      button {
+        all: unset;
+        display: grid;
+        place-items: center;
+        font-weight: 700;
+        width: fit-content;
+        font-size: 0.85em;
+        border-radius: 25px;
+        padding: 7px 15px;
+        border: 2px solid white;
+        transition: .1s ease;
+
+        &:active {
+          background: #fff;
+          color: #000;
+        }
+      }
+
+      .blue-button {
+        background-color: #6b6be6;
+        color: white;
+        border-color: #6b6be6;
+
+        &:active {
+          color: white;
+          background-color: black;
+          background-color: #5757cf;
+          border-color: rgb(87, 87, 207);  
+        }
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    & {
+      display: block;
+    }
+  }
+}
+

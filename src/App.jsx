@@ -20,7 +20,7 @@ export default function App() {
     <div className="App">
         <Header />
       <TabContext.Provider value={{ tabSelected, setTabSelected }}>
-        <MainSection />
+        <MainSection id="MainSection" />
         <NavBar />
         {tabSelected == "visao-geral" ? <VisaoGeral/> : null}
         {tabSelected == "foto" ? 

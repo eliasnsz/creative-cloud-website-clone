@@ -1,8 +1,10 @@
 import './MainSection.scss'
+import { MobileMainSection } from './MobileMainSection/MobileMainSection'
 
 export function MainSection() {
   return(
     <>
+      <MobileMainSection/>
       <section id="main-section-container">
         
         <div id="main-section-flex-container">
