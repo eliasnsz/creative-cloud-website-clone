@@ -4,8 +4,7 @@ import './Header.scss'
 export function Header() {
 
   const [isHeaderVisible, setIsHeaderVisible] = useState(true)
-
-  var lastScrollTop = 0
+  const [lastPosition, setLastPosition] = useState(0);
 
   window.addEventListener('wheel', (e) => {
     
@@ -17,27 +16,19 @@ export function Header() {
 
   })
 
-  var lastPosition = 0;
-
   window.addEventListener('touchmove', (e) => {
     
 
     if(typeof(scrollY) == "number") {
       if (scrollY == lastPosition) return
 
-      if(scrollY > lastPosition) {
-        async () => {
-          setIsHeaderVisible(false)
-        }
-        lastPosition = scrollY
-        console.log("desceu");
+      if(scrollY > lastPosition) {  
+        setLastPosition(scrollY)
+        setIsHeaderVisible(false)
         return
       } else {
-        async () => {
-          setIsHeaderVisible(true)
-        }
-        lastPosition = scrollY
-        console.log("subiu");
+        setIsHeaderVisible(true)
+        setLastPosition(scrollY)
         return
       }
     }
