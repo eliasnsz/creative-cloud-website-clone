@@ -2,9 +2,10 @@
 
 #navbar-container {
   height: 43px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.065);
+  
   
   ul {
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.065);
     width: fit-content;
     height: 100%;
     list-style: none;
@@ -15,6 +16,11 @@
     margin: auto;
     position: relative;
 
+    @media (max-width: 865px) {
+      & {
+        display: none;
+      }
+    }
     
     &::after {
       content: "";
@@ -57,8 +63,7 @@
         }
         
       }
-
-
     }
   }
 }
+

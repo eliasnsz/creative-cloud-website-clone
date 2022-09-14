@@ -1,0 +1,28 @@
+#mobile-navbar-container {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  display: flex;
+  height: 100%;
+  
+  .select-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-left: 10px;
+  }
+  
+  select {
+    font-weight: 600;
+    width: 90px;
+    outline: none;
+    border: none;
+    transition: .3s ease;
+  }
+
+  @media (min-width: 866px) {
+    & {
+      display: none;
+    }
+  }
+}

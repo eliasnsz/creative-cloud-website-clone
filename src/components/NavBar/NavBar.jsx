@@ -1,5 +1,6 @@
 import { useState, useContext } from 'react'
 import { TabContext } from '../../App'
+import { MobileNavBar } from './MobileNavBar/MobileNavBar'
 import './NavBar.scss'
 
 export function NavBar () {
@@ -9,49 +10,51 @@ export function NavBar () {
   return (
     <>
       <div id="navbar-container">
-        <ul>
+        <MobileNavBar/>
+        
+        <ul id='navbar-ul'>
           <li>
-            <input type="radio" onClick={() => setTabSelected("visao-geral")} 
-            name="navbar-radio" id="navbar-radio"/> 
+            <input type="radio" onClick={e => { setTabSelected(e.target.value)}} 
+            name="navbar-radio" id="navbar-radio" value={"visao-geral"}/> 
             Visão geral
             <img src="" alt="" />
           </li>
           <li>
-            <input type="radio" onClick={() => setTabSelected("foto")}
-            name="navbar-radio" id="navbar-radio"/>
+            <input type="radio" onClick={e => setTabSelected(e.target.value)}
+            name="navbar-radio" id="navbar-radio" value={"foto"}/>
             Foto
           </li>
           <li>
-            <input type="radio" onClick={() => setTabSelected("design-grafico")} 
-            name="navbar-radio" id="navbar-radio"/> 
+            <input type="radio"  onClick={e => setTabSelected(e.target.value)} 
+            name="navbar-radio" id="navbar-radio" value={"design-grafico"}/> 
             Design gráfico
           </li>
           <li>
-            <input type="radio" onClick={() => setTabSelected("video")} 
-            name="navbar-radio" id="navbar-radio"/> 
+            <input type="radio" onClick={e => setTabSelected(e.target.value)} 
+            name="navbar-radio" id="navbar-radio" value={"video"}/> 
             Vídeo
           </li>
           <li>
-            <input type="radio" onClick={() => setTabSelected("ilustracao")} 
-            name="navbar-radio" id="navbar-radio"/> 
+            <input type="radio" onClick={e => setTabSelected(e.target.value)} 
+            name="navbar-radio" id="navbar-radio" value={"ilustracao"}/> 
             Ilustração
           </li>
           <li>
-            <input type="radio" onClick={() => setTabSelected("interface")}
-            name="navbar-radio" id="navbar-radio"/> 
+            <input type="radio" onClick={e => setTabSelected(e.target.value)}
+            name="navbar-radio" id="navbar-radio" value={"interface"}/> 
             Interface e experiência do usuário
           </li>
           <li>
-            <input type="radio" onClick={() => setTabSelected("3d")}
-            name="navbar-radio" id="navbar-radio"/>  
+            <input type="radio" onClick={e => setTabSelected(e.target.value)}
+            name="navbar-radio" id="navbar-radio" value={"3d"}/>  
             3D e realidade aumentada
           </li>
           <li>
-            <input type="radio" onClick={() => setTabSelected("redes-sociais")}
-            name="navbar-radio" id="navbar-radio"/> 
+            <input type="radio" onClick={e => setTabSelected(e.target.value)}
+            name="navbar-radio" id="navbar-radio" value={"redes-sociais"}/> 
             Redes sociais
           </li>
-        </ul>
+        </ul>        
       </div>
     </>
   )

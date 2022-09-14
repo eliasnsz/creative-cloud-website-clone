@@ -9,7 +9,7 @@ export function TabComponent({ title, extra, desc, cards }) {
           {title}
         </h2>
         <p className='tab-desc'>
-          <p className='extra-desc'>{extra} <a href="">{desc}</a></p>
+          <span className='extra-desc'>{extra} <a href="">{desc}</a></span>
         </p>
 
         <section id="grid-card-container">
