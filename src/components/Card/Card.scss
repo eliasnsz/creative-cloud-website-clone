@@ -6,6 +6,23 @@ section#card-container {
   overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 0.284);
 
+  @media (max-width: 600px) {
+    & {
+      height: fit-content;
+
+      .card-content {
+          .card-body {
+            height: 100%;
+          }
+      }
+      
+      .img {
+        display: none;
+      }
+    }
+
+  }
+
   .img {
     min-height: 128px;
     background-size: cover;

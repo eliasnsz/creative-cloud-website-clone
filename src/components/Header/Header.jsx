@@ -7,14 +7,42 @@ export function Header() {
 
   var lastScrollTop = 0
 
-  window.addEventListener('mousewheel', (e) => {
-
+  window.addEventListener('wheel', (e) => {
+    
     if(e.deltaY === 100) {
       setIsHeaderVisible(false)
     } else {
       setIsHeaderVisible(true)
     }
 
+  })
+
+  var lastPosition = 0;
+
+  window.addEventListener('touchmove', (e) => {
+    
+
+    if(typeof(scrollY) == "number") {
+      if (scrollY == lastPosition) return
+
+      if(scrollY > lastPosition) {
+        async () => {
+          setIsHeaderVisible(false)
+        }
+        lastPosition = scrollY
+        console.log("desceu");
+        return
+      } else {
+        async () => {
+          setIsHeaderVisible(true)
+        }
+        lastPosition = scrollY
+        console.log("subiu");
+        return
+      }
+    }
+   
+    
   })
 
   return (
