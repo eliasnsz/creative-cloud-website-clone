@@ -26,7 +26,10 @@ export function TabComponent({ title, extra, desc, cards }) {
               /> )            
             })
           }
-
+          {
+            cards.length % 2 !== 0 ?
+              <div className="spacament-div"></div> : null
+          }
         </section>
 
       </section>

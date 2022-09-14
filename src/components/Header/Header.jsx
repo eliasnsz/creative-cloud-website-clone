@@ -1,9 +1,25 @@
+import { useState } from 'react'
 import './Header.scss'
 
 export function Header() {
+
+  const [isHeaderVisible, setIsHeaderVisible] = useState(true)
+
+  var lastScrollTop = 0
+
+  window.addEventListener('mousewheel', (e) => {
+
+    if(e.deltaY === 100) {
+      setIsHeaderVisible(false)
+    } else {
+      setIsHeaderVisible(true)
+    }
+
+  })
+
   return (
     <>
-      <header id="main-header">
+      <header id="main-header" className={isHeaderVisible ? "" : "retracted"} >
         <section className="main-header-content">
           
           <div className="main-header-logo">

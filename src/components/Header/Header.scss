@@ -4,8 +4,17 @@
   height: 60px;
   width: 100%;
   padding: 10px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.137);
-  transition: .5 ease;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.067);
+  transition: .3s ease;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  z-index: 1000;
+  transform: translateY(0px);
+
+  &.retracted {
+    transform: translateY(-60px);
+  }
 }
 
 .main-header-content {

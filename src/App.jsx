@@ -4,8 +4,10 @@ import './App.scss'
 import { Header } from './components/Header/Header'
 import { MainSection } from './components/MainSection/MainSection'
 import { NavBar } from './components/NavBar/NavBar'
+import { SecondarySection } from './components/SecondarySection/SecondarySection'
 import { TabComponent } from './components/Tabs/TabComponent/TabComponent'
 import { VisaoGeral } from './components/Tabs/VisaoGeral/VisaoGeral'
+import { TerciarySection } from './components/TerciarySection/TerciarySection'
 
 export const TabContext = createContext()
 
@@ -602,6 +604,8 @@ export default function App() {
           /> : 
           null}
       </TabContext.Provider>
+      <SecondarySection/>
+      <TerciarySection/>
     </div>
   )
 }

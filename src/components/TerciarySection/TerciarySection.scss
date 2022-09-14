@@ -1,0 +1,44 @@
+#terciary-section {
+  padding: 100px 0px;
+  background-color: #2C2C2C;
+  color: white;
+  width: 100%;
+  
+  h1 {
+    font-size: 1.7em;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .down-link {
+    text-align: center;
+    a {
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.1em;
+    }
+  }
+
+}
+
+#text-flex {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 0px;
+  row-gap: 40px;
+  justify-content: space-evenly;
+  max-width: 1200px;
+  margin: auto  ;
+}
+
+.text-flex-container {
+  width: 350px;
+  h3 {
+    font-size: 1.1em;
+    margin-bottom: 6px;
+  }
+  p {
+    width: 95%;
+    line-height: 24px;
+  }
+}
