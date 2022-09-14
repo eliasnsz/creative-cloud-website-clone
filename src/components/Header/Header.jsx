@@ -13,10 +13,8 @@ export function Header() {
       if(scrollY > lastPosition) {  
         setLastPosition(scrollY)
         setIsHeaderVisible(false)
-        console.log(scrollY)
         return
       } else {
-        console.log(scrollY)
         setIsHeaderVisible(true)
         setLastPosition(scrollY)
         return
