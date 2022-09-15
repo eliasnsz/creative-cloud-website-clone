@@ -38,6 +38,12 @@ export function Plans() {
 
         <p className='contato'>Compre pelo telefone: <a href="tel:08000474493" >0800 047 4493</a></p>
       </section>
+      <section className="plans-footer">
+        <img src="https://www.adobe.com/content/dam/shared/images/product-icons/svg/creative-cloud.svg" alt="" />
+        <h2>Liberdade para criar.</h2>
+        <p>Fotografia, vídeo, design gráfico, ilustração e muito mais. Tudo para dar vida à sua imaginação.</p>
+        <p><a className='link' href="">Veja os planos e os preços</a></p>
+      </section>
     </>
   )
 }

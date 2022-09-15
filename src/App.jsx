@@ -1,5 +1,6 @@
 import { useState, createContext } from 'react'
 import './App.scss'
+import { Footer } from './components/Footer/Footer'
 
 import { Header } from './components/Header/Header'
 import { MainSection } from './components/MainSection/MainSection'
@@ -609,6 +610,8 @@ export default function App() {
       <TerciarySection/>
       <div id="hr-gradient"></div>
       <Plans/>
+      <div id="hr-gradient"></div>
+      <Footer/>
     </div>
   )
 }
